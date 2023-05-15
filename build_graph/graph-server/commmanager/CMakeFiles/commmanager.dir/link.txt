@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcommmanager.a CMakeFiles/commmanager.dir/commmanager.cpp.o
+/usr/bin/ranlib libcommmanager.a

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+##
+## Send a folder to all the nodes specified in `~/dshmachines`. TO be invoked on the remote machine.
+## Must have achieved passwd-less ssh among friend machines.
+##
+## File path should be specified relative to `dorylus/` directory.
+##
+
+
+cd ${HOME}/dorylus/
+
+EC2MAN_CMD="python3 -m ec2man"
+
+
+FOLDER=$( pwd )/$1
+
+for MACH in $( tail -n +2 ~/dshmachines ); do
+    ssh ${MACH} "mkdir -p ${FOLDER}"
+    scp -r ${FOLDER} ${MACH}:$( dirname ${FOLDER} ) > /dev/null
+done

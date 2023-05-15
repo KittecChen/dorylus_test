@@ -1,0 +1,66 @@
+#!/bin/bash
+
+##
+## Start all the machines listed in the manager. Generates proper dshmachine files and put them on to the machines.
+## Generates weightserver info file
+## Also, the `layerconfig` file is sent to all graphservers and weightservers.
+##
+## Usage: $ ./gnnman/setup-cluster
+##
+## Options:
+##      Default: Graph servers receive a graph servers' copy, and weight servers receive a weight servers' copy of
+##               'dshmachines'.
+##
+## All these config files are put in the home directory `~/` for convience.
+##
+
+
+cd $( dirname $0 )/..
+
+EC2MAN_CMD="python3 -m ec2man"
+
+$EC2MAN_CMD setup
+
+# For graph servers.
+echo "Processing context 'graph'..."
+
+${EC2MAN_CMD} graph dshfile > dshmachines
+${EC2MAN_CMD} weight all prip > wserverip
+
+## Create `kill-all` file
+cp run/kill-all-template ./kill-all
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    sed -i s/{{user}}/$( python3 -m ec2man graph user )/ kill-all
+    sed -i s/{{WSERVER0}}/$( python3 -m ec2man weight 0 prip )/ kill-all
+    sed -i s/{{GSERVER0}}/$( python3 -m ec2man graph 0 prip )/ kill-all
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    sed -i "" s/{{user}}/$( python3 -m ec2man graph user )/ kill-all
+    sed -i "" s/{{WSERVER0}}/$( python3 -m ec2man weight 0 prip )/ kill-all
+    sed -i "" s/{{GSERVER0}}/$( python3 -m ec2man graph 0 prip )/ kill-all
+fi
+
+${EC2MAN_CMD} graph all put wserverip run/wserverport dshmachines run/*.config run/gserverport run/dataport run/ctrlport run/nodeport run/numlambdasforward run/numlambdasbackward kill-all ~/.aws
+rm -f dshmachines kill-all wserverip
+
+NUM_GRAPH_NODES=$(( $( ${EC2MAN_CMD} graph info | wc -l | awk '{print $1}' ) - 1 ))
+for i in $( seq 0 $(( ${NUM_GRAPH_NODES} - 1 )) ); do
+    ${EC2MAN_CMD} graph $i prip > myprip
+    ${EC2MAN_CMD} graph $i put myprip
+    rm -f myprip
+done
+
+# For weight servers.
+echo "Processing context 'weight'..."
+
+NUM_GRAPH_NODES=$(( $( ${EC2MAN_CMD} weight info | wc -l | awk '{print $1}' ) - 1 ))
+for i in $( seq 0 $(( ${NUM_GRAPH_NODES} - 1 )) ); do
+    ${EC2MAN_CMD} weight $i prip > myprip
+    ${EC2MAN_CMD} weight $i put myprip
+    rm -f myprip
+done
+
+${EC2MAN_CMD} graph all prip > gserverip
+${EC2MAN_CMD} weight dshfile > dshmachines
+${EC2MAN_CMD} weight all put gserverip dshmachines run/dataport run/*.config run/gserverport run/wserverport
+rm -f gserverip
+rm -f dshmachines

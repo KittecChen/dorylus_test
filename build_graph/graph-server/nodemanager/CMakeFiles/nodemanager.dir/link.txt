@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnodemanager.a CMakeFiles/nodemanager.dir/nodemanager.cpp.o
+/usr/bin/ranlib libnodemanager.a

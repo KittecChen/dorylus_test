@@ -1,0 +1,32 @@
+#!/bin/bash
+
+##
+## Build the graph server executable.
+##
+
+
+cd ${HOME}/dorylus/
+
+backend='lambda'
+build_type='Release'
+for var in "${@}"; do
+    if [[ $var == "GPU" || $var == "gpu" ]]; then
+        backend='gpu'
+    fi
+    if [[ $var == "CPU" || $var == "cpu" ]]; then
+        backend='cpu'
+    fi
+    if [[ $var == "d" ]]; then
+        build_type='Debug'
+    fi
+done
+
+if [ ! -d build ]; then
+    mkdir build
+fi
+
+cd build
+cmake .. -DBUILD_GRAPH=yes -DBACKEND=${backend} -DCMAKE_BUILD_TYPE=${build_type}
+make -j
+
+mv graph-server/graphserver .

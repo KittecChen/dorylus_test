@@ -1,0 +1,55 @@
+/var/spool/slurm/job1758669/slurm_script: line 19: GPUmodule: command not found
+g006
+172.18.92.44
+The numbers 172.18.92.44 and 0 and 0 is written
+172.18.92.44
+0
+0
+[33;1mKilling existing 'graphserver' processes...[0m
+graphserver: no process found
+[33;1mRunning GRAPH servers with: [ MARK # 33 ]...[0m
+./build_graph/graphserver --datasetdir /home/x-lchen3/kittec_project/cora/parts_2/ --featuresfile /home/x-lchen3/kittec_project/cora/features.bsnap --labelsfile /home/x-lchen3/kittec_project/cora/labels.bsnap --dshmachinesfile /home/x-lchen3/kittec_project/dshmachines_g --layerfile /home/x-lchen3/kittec_project/cora.config --pripfile /home/x-lchen3/kittec_project/myprip_g1 --dataserverport 55431 --weightserverport 65433 --wserveripfile /home/x-lchen3/kittec_project/wserverip --undirected 0 --tmpdir=/home/x-lchen3/tmpfiles --cthreads 1 --dthreads 1 --dataport 5000 --ctrlport 7000 --nodeport 6000 --numlambdas 1 --numEpoch 10 --validationFrequency 1 --MODE 1 --pipeline 0 --staleness 4294967295 --gnn GCN --preprocess 0 --timeout_ratio 5
+CUBLAS initialization failed
+CUBLAS stat 1
+Error: cublasCreate() failed with status 1 (CUBLAS_STATUS_NOT_INITIALIZED)
+
+=================================================================
+==1617284==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 65536 byte(s) in 1 object(s) allocated from:
+    #0 0x14684d6444f8 in __interceptor_realloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:164
+    #1 0x1468157b32ef  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x4eb2ef)
+
+Direct leak of 1024 byte(s) in 1 object(s) allocated from:
+    #0 0x14684d644337 in __interceptor_calloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x1468157ad59a  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x4e559a)
+
+Direct leak of 264 byte(s) in 1 object(s) allocated from:
+    #0 0x14684d644337 in __interceptor_calloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x14681576b40d  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x4a340d)
+
+Direct leak of 128 byte(s) in 1 object(s) allocated from:
+    #0 0x14684d644337 in __interceptor_calloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x1468157ad52d  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x4e552d)
+
+Direct leak of 64 byte(s) in 2 object(s) allocated from:
+    #0 0x14684d64417f in __interceptor_malloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:145
+    #1 0x14681584a5e2  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x5825e2)
+
+Direct leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x14684d644337 in __interceptor_calloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x14681576707e  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x49f07e)
+
+Direct leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x14684d644337 in __interceptor_calloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x146815766fdd  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x49efdd)
+
+Direct leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x14684d644337 in __interceptor_calloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x146815767106  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x49f106)
+
+Indirect leak of 640 byte(s) in 2 object(s) allocated from:
+    #0 0x14684d644337 in __interceptor_calloc /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/libsanitizer/asan/asan_malloc_linux.cpp:154
+    #1 0x14681584a5f9  (/anvil/projects/x-cis220117/installed_softwares/lib/libzmq.so.5.2.5+0x5825f9)
+
+SUMMARY: AddressSanitizer: 67824 byte(s) leaked in 11 allocation(s).

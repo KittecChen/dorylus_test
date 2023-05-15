@@ -1,0 +1,2 @@
+/usr/bin/ar qc libweight_comm.a CMakeFiles/weight_comm.dir/weight_comm.cpp.o
+/usr/bin/ranlib libweight_comm.a

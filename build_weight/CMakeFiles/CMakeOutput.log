@@ -1,0 +1,366 @@
+The system is: Linux - 4.18.0-425.3.1.el8.x86_64 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/3.20.2/CompilerIdCXX/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_20c3b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_20c3b.dir/build.make CMakeFiles/cmTC_20c3b.dir/build
+gmake[1]: Entering directory '/anvil/projects/x-cis220117/kittec/dorylus/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o
+/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC   -v -o CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Reading specs from /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/specs
+COLLECT_GCC=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/bin/g++
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/configure --prefix=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-system-zlib --with-zstd-include=/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/include --with-zstd-lib=/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64 --enable-bootstrap --with-mpfr-include=/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include --with-mpfr-lib=/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib --with-gmp-include=/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include --with-gmp-lib=/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib --with-mpc-include=/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include --with-mpc-lib=/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -Wl,-rpath,/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-8.4.1-dif34jo/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64' --with-boot-ldflags='-Wl,-rpath,/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -Wl,-rpath,/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-8.4.1-dif34jo/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64 -static-libstdc++ -static-libgcc'
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.0 (Spack GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20c3b.dir/'
+ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -I /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include -D_GNU_SOURCE -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_20c3b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fexceptions -o /tmp/ccUv7YD8.s
+GNU C++17 (Spack GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.0.2-p9, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring duplicate directory "/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include"
+ignoring duplicate directory "/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include"
+  as it is a non-system directory that duplicates a system directory
+#include "..." search starts here:
+#include <...> search starts here:
+ /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include
+ /apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/include
+ /apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/include
+ /apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/include
+ /apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/include
+ /apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include
+ /apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include
+ /apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include
+ /apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/include
+ /apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/include
+ /anvil/projects/x-cis220117/installed_softwares/include
+ /home/x-lchen3/kittec_project/metis/include
+ .
+ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0
+ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu
+ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward
+ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /usr/local/include
+ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include
+ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++17 (Spack GCC) version 11.2.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.0.2-p9, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 0593c828c3eaccedfc9634bada82966b
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20c3b.dir/'
+ as -v -I /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include --64 -o CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccUv7YD8.s
+GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-117.el8
+COMPILER_PATH=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64/:/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib/:/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib/:/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64/:/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib/:/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/:/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib/:/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib/:/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib/:/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/:/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_20c3b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20c3b.dir/link.txt --verbose=1
+/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC  -v CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_20c3b 
+Reading specs from /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/specs
+COLLECT_GCC=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/bin/g++
+COLLECT_LTO_WRAPPER=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/configure --prefix=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --with-system-zlib --with-zstd-include=/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/include --with-zstd-lib=/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64 --enable-bootstrap --with-mpfr-include=/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include --with-mpfr-lib=/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib --with-gmp-include=/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include --with-gmp-lib=/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib --with-mpc-include=/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include --with-mpc-lib=/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -Wl,-rpath,/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-8.4.1-dif34jo/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64' --with-boot-ldflags='-Wl,-rpath,/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -Wl,-rpath,/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-8.4.1-dif34jo/lib -Wl,-rpath,/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64 -static-libstdc++ -static-libgcc'
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.2.0 (Spack GCC) 
+COMPILER_PATH=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64/:/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib/:/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib/:/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64/:/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib/:/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/:/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib/:/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib/:/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib/:/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/:/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20c3b' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib' '-L/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib' '-L/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib' '-L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_20c3b.'
+ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpjIfr0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_20c3b /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib -L/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib -L/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib -L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64 -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64 -L/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64 -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib -L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib -L/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64 -L/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib -L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -L/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -L/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -L/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -L/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64 -L/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0 -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -rpath /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib -rpath /apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib -rpath /apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib -rpath /apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib -lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20c3b' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib' '-L/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib' '-L/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib' '-L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_20c3b.'
+gmake[1]: Leaving directory '/anvil/projects/x-cis220117/kittec/dorylus/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include]
+    add: [/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/include]
+    add: [/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/include]
+    add: [/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/include]
+    add: [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/include]
+    add: [/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include]
+    add: [/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include]
+    add: [/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include]
+    add: [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/include]
+    add: [/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/include]
+    add: [/anvil/projects/x-cis220117/installed_softwares/include]
+    add: [/home/x-lchen3/kittec_project/metis/include]
+    add: [.]
+    add: [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0]
+    add: [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu]
+    add: [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+    add: [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+    add: [/usr/local/include]
+    add: [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include]
+    add: [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include] ==> [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include]
+  collapse include dir [/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/include] ==> [/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/include]
+  collapse include dir [/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/include] ==> [/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/include]
+  collapse include dir [/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/include] ==> [/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/include]
+  collapse include dir [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/include] ==> [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/include]
+  collapse include dir [/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include] ==> [/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include]
+  collapse include dir [/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include] ==> [/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include]
+  collapse include dir [/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include] ==> [/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include]
+  collapse include dir [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/include] ==> [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/include]
+  collapse include dir [/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/include] ==> [/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/include]
+  collapse include dir [/anvil/projects/x-cis220117/installed_softwares/include] ==> [/anvil/projects/x-cis220117/installed_softwares/include]
+  collapse include dir [/home/x-lchen3/kittec_project/metis/include] ==> [/home/x-lchen3/kittec_project/metis/include]
+  skipping relative include dir [.]
+  collapse include dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include/c++/11.2.0]
+  collapse include dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include/c++/11.2.0/x86_64-pc-linux-gnu]
+  collapse include dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include/c++/11.2.0/backward]
+  collapse include dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include]
+  collapse include dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include;/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/include;/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/include;/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/include;/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/include;/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include;/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include;/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include;/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/include;/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/include;/anvil/projects/x-cis220117/installed_softwares/include;/home/x-lchen3/kittec_project/metis/include;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include/c++/11.2.0;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include/c++/11.2.0/x86_64-pc-linux-gnu;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include/c++/11.2.0/backward;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include;/usr/local/include;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_20c3b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_20c3b.dir/build.make CMakeFiles/cmTC_20c3b.dir/build]
+  ignore line: [gmake[1]: Entering directory '/anvil/projects/x-cis220117/kittec/dorylus/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC   -v -o CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Reading specs from /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/specs]
+  ignore line: [COLLECT_GCC=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/bin/g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/configure --prefix=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --with-system-zlib --with-zstd-include=/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/include --with-zstd-lib=/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64 --enable-bootstrap --with-mpfr-include=/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include --with-mpfr-lib=/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib --with-gmp-include=/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include --with-gmp-lib=/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib --with-mpc-include=/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include --with-mpc-lib=/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib --without-isl --with-stage1-ldflags='-Wl -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -Wl -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -Wl -rpath /apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -Wl -rpath /apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -Wl -rpath /apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -Wl -rpath /apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-8.4.1-dif34jo/lib -Wl -rpath /apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64' --with-boot-ldflags='-Wl -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -Wl -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -Wl -rpath /apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -Wl -rpath /apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -Wl -rpath /apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -Wl -rpath /apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-8.4.1-dif34jo/lib -Wl -rpath /apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64 -static-libstdc++ -static-libgcc']
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.0 (Spack GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20c3b.dir/']
+  ignore line: [ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/cc1plus -quiet -v -I /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include -D_GNU_SOURCE -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_20c3b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fexceptions -o /tmp/ccUv7YD8.s]
+  ignore line: [GNU C++17 (Spack GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.0.2-p9  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include"]
+  ignore line: [ignoring duplicate directory "/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include]
+  ignore line: [ /apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/include]
+  ignore line: [ /apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/include]
+  ignore line: [ /apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/include]
+  ignore line: [ /apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/include]
+  ignore line: [ /apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include]
+  ignore line: [ /apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include]
+  ignore line: [ /apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include]
+  ignore line: [ /apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/include]
+  ignore line: [ /apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/include]
+  ignore line: [ /anvil/projects/x-cis220117/installed_softwares/include]
+  ignore line: [ /home/x-lchen3/kittec_project/metis/include]
+  ignore line: [ .]
+  ignore line: [ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0]
+  ignore line: [ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../include/c++/11.2.0/backward]
+  ignore line: [ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/include]
+  ignore line: [ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (Spack GCC) version 11.2.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.2.1  MPFR version 4.0.2-p9  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 0593c828c3eaccedfc9634bada82966b]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20c3b.dir/']
+  ignore line: [ as -v -I /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include --64 -o CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccUv7YD8.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-117.el8]
+  ignore line: [COMPILER_PATH=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64/:/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib/:/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib/:/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64/:/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib/:/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/:/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib/:/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib/:/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib/:/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/:/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_20c3b]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20c3b.dir/link.txt --verbose=1]
+  ignore line: [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC  -v CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_20c3b ]
+  ignore line: [Reading specs from /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/specs]
+  ignore line: [COLLECT_GCC=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /tmp/rcactest/spack-stage-gcc-11.2.0-qjtdkvszjnmbsopeuflhtcmqex5fyagb/spack-src/configure --prefix=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --with-system-zlib --with-zstd-include=/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/include --with-zstd-lib=/apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64 --enable-bootstrap --with-mpfr-include=/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/include --with-mpfr-lib=/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib --with-gmp-include=/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/include --with-gmp-lib=/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib --with-mpc-include=/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/include --with-mpc-lib=/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib --without-isl --with-stage1-ldflags='-Wl -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -Wl -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -Wl -rpath /apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -Wl -rpath /apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -Wl -rpath /apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -Wl -rpath /apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-8.4.1-dif34jo/lib -Wl -rpath /apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64' --with-boot-ldflags='-Wl -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -Wl -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -Wl -rpath /apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -Wl -rpath /apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -Wl -rpath /apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -Wl -rpath /apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-8.4.1-dif34jo/lib -Wl -rpath /apps/spack/anvilgpu/apps/zstd/1.5.0-gcc-8.4.1-tdqxudx/lib64 -static-libstdc++ -static-libgcc']
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.2.0 (Spack GCC) ]
+  ignore line: [COMPILER_PATH=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64/:/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib/:/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib/:/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64/:/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib/:/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/:/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib/:/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib/:/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib/:/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/:/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib/:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20c3b' '-I' '/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/include' '-fexceptions' '-pthread' '-L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib' '-L/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib' '-L/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib' '-L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_20c3b.']
+  link line: [ /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2 -plugin /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpjIfr0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_20c3b /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o -L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib -L/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib -L/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib -L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64 -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64 -L/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64 -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0 -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib -L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib -L/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64 -L/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib -L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib -L/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib -L/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib -L/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib -L/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64 -L/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib -L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../.. CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0 -rpath /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64 -rpath /apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib -rpath /apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib -rpath /apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib -rpath /apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib -lmpi_cxx -lmpi -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/libexec/gcc/x86_64-pc-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccpjIfr0.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib:/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_20c3b] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o] ==> obj [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o]
+    arg [-L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib] ==> dir [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib]
+    arg [-L/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib] ==> dir [/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib]
+    arg [-L/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib] ==> dir [/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib]
+    arg [-L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib] ==> dir [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib]
+    arg [-L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64] ==> dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64]
+    arg [-L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64] ==> dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64]
+    arg [-L/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64] ==> dir [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64]
+    arg [-L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+    arg [-L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib] ==> dir [/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib]
+    arg [-L/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib] ==> dir [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib]
+    arg [-L/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64] ==> dir [/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64]
+    arg [-L/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib] ==> dir [/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib]
+    arg [-L/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib] ==> dir [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib]
+    arg [-L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64] ==> dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64]
+    arg [-L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib] ==> dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib]
+    arg [-L/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib] ==> dir [/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib]
+    arg [-L/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib] ==> dir [/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib]
+    arg [-L/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib] ==> dir [/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib]
+    arg [-L/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64] ==> dir [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64]
+    arg [-L/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib] ==> dir [/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib]
+    arg [-L/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..]
+    arg [CMakeFiles/cmTC_20c3b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib] ==> ignore
+    arg [-lmpi_cxx] ==> lib [mpi_cxx]
+    arg [-lmpi] ==> lib [mpi]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o] ==> obj [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib] ==> [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib] ==> [/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib] ==> [/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib] ==> [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64/../lib64] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64]
+  collapse library dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/../lib64] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64]
+  collapse library dir [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64/../lib64] ==> [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64]
+  collapse library dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0]
+  collapse library dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib64] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib] ==> [/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib] ==> [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib]
+  collapse library dir [/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64] ==> [/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64]
+  collapse library dir [/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib] ==> [/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib] ==> [/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64]
+  collapse library dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib] ==> [/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib] ==> [/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib] ==> [/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib]
+  collapse library dir [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64] ==> [/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64]
+  collapse library dir [/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib] ==> [/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib]
+  collapse library dir [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../..] ==> [/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib]
+  implicit libs: [mpi_cxx;mpi;stdc++;m;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtbegin.o;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/lib;/apps/spack/anvilgpu/apps/hwloc/2.5.0-gcc-11.2.0-dp4yy5n/lib;/apps/spack/anvilgpu/apps/libevent/2.1.12-gcc-11.2.0-loxxg45/lib;/apps/spack/anvilgpu/apps/zlib/1.2.11-gcc-11.2.0-g2guo73/lib;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib64;/apps/anvilgpu/external/apps/cudnn/cuda11.2/8.1.1/lib64;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib/gcc/x86_64-pc-linux-gnu/11.2.0;/lib64;/usr/lib64;/apps/spack/anvilgpu/apps/boost/1.74.0-gcc-11.2.0-cyziorr/lib;/apps/anvilgpu/external/apps/cuda-toolkit/11.4.2/lib64;/apps/spack/anvilgpu/apps/numactl/2.0.14-gcc-11.2.0-wrjotmv/lib;/apps/spack/anvilgpu/apps/gcc/11.2.0-gcc-8.4.1-qjtdkvs/lib;/apps/spack/anvilgpu/apps/mpc/1.1.0-gcc-8.4.1-dh4xij5/lib;/apps/spack/anvilgpu/apps/mpfr/4.0.2-gcc-8.4.1-zqh4s5a/lib;/apps/spack/anvilgpu/apps/gmp/6.2.1-gcc-8.4.1-a4uy3yg/lib;/apps/anvilgpu/external/apps/nccl/cuda11.2/2.8.4/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c0bde/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c0bde.dir/build.make CMakeFiles/cmTC_c0bde.dir/build
+gmake[1]: Entering directory '/anvil/projects/x-cis220117/kittec/dorylus/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c0bde.dir/CheckIncludeFile.cxx.o
+/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC    -o CMakeFiles/cmTC_c0bde.dir/CheckIncludeFile.cxx.o -c /home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_c0bde
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0bde.dir/link.txt --verbose=1
+/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC CMakeFiles/cmTC_c0bde.dir/CheckIncludeFile.cxx.o -o cmTC_c0bde 
+gmake[1]: Leaving directory '/anvil/projects/x-cis220117/kittec/dorylus/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_00ac3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_00ac3.dir/build.make CMakeFiles/cmTC_00ac3.dir/build
+gmake[1]: Entering directory '/anvil/projects/x-cis220117/kittec/dorylus/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_00ac3.dir/src.cxx.o
+/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_00ac3.dir/src.cxx.o -c /home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_00ac3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00ac3.dir/link.txt --verbose=1
+/apps/spack/anvilgpu/apps/openmpi/4.0.6-gcc-11.2.0-j7hkyke/bin/mpiCC CMakeFiles/cmTC_00ac3.dir/src.cxx.o -o cmTC_00ac3 
+gmake[1]: Leaving directory '/anvil/projects/x-cis220117/kittec/dorylus/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

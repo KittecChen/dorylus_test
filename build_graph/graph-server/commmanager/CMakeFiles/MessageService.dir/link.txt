@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMessageService.a CMakeFiles/MessageService.dir/message_service.cpp.o
+/usr/bin/ranlib libMessageService.a

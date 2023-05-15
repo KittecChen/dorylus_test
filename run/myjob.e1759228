@@ -1,0 +1,17 @@
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) boost/1.74.0     3) mpc/1.1.0          5) openmpi/4.0.6
+  2) gmp/6.2.1        4) numactl/2.0.14     6) zlib/1.2.11
+
+The following have been reloaded with a version change:
+  1) cuda/11.2.2 => cuda/11.4.2     3) mpfr/3.1.6 => mpfr/4.0.2
+  2) gcc/8.4.1 => gcc/11.2.0
+
+/var/spool/slurm/job1759228/slurm_script: line 38: /home/x-lchen3/kittec_project/dorylus/run/generateip.sh: Permission denied
+cat: /home/x-lchen3/kittec_project/myprip_g1: Permission denied
+cat: /home/x-lchen3/kittec_project/myprip_g2: Permission denied
+cat: /home/x-lchen3/kittec_project/myprip_w: Permission denied
+mkdir: cannot create directory ‘/home/x-lchen3’: Permission denied
+tee: /home/x-lchen3/kittec_project/testlog/g2.log: Permission denied
+tee: /home/x-lchen3/kittec_project/testlog/g1.log: Permission denied
+tee: /home/x-lchen3/kittec_project/testlog/w.log: Permission denied

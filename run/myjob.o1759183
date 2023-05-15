@@ -1,0 +1,10 @@
+g001 g004 g005
+172.18.92.39
+172.18.92.42
+172.18.92.43
+srun: error: g004: task 0: Exited with exit code 13
+slurmstepd: error: execve(): /home/x-lchen3/kittec_project/dorylus/run/run-onnode_g_gpu2: Permission denied
+slurmstepd: error: execve(): /home/x-lchen3/kittec_project/dorylus/run/run-onnode_w: Permission denied
+srun: error: g005: task 0: Exited with exit code 13
+srun: error: g001: task 0: Exited with exit code 13
+slurmstepd: error: execve(): /home/x-lchen3/kittec_project/dorylus/run/run-onnode_g_gpu1: Permission denied

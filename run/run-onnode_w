@@ -1,0 +1,284 @@
+#!/bin/bash
+
+##
+## Run the system on the given context. TO be invoked on only MASTER node.
+## Must be invoked after a proper `setuup-cluster` & `builld-system`!!!
+##
+## Usage: $ ./run/run-onnode <Context> <Dataset> [--l=#lambdas] [--lr=learning_rate] [--p] [--e=#epochs] [--s=staleness_bound] [--t=target_accuracy]
+##
+## Arguments:
+##      Context: Which part of the system to run [graph|weight]
+##      Dataset: Name of the dataset (found at /filepool/<dataset-name>/)
+##
+##	--l|-lambdas:		Set the number of lambdas
+##	--lr|-learning_rate:	Set the learning rate
+##	--p|-pipeline:		Enable pipeline version of Dorylus
+##	--e|-epochs:		Set the number of epochs
+##	--s|-staleness:		Set the staleness bound for asynchrony
+##	--tr|-timeout_ratio:	Tune how long the system waits for lambdas before relaunch
+##	--t|-targetacc:		Set a target accuracy for Dorylus (for early stop)
+##	cpu|gpu:		Enable cpu or gpu version (must rebuild source code to change)
+##
+#
+
+
+
+WORKING=${HOME}/kittec_project
+
+cd ${WORKING}/dorylus/
+
+case $1 in
+    #
+    # Run graphserver.
+    #
+    "graph")
+        if [[ $# -lt 2 ]]; then
+            echo "Usage: run-onnode graph <dataset> [#lambdas]"
+            exit
+        fi
+
+        GPORT=$( < ../gserverport )
+        WPORT=$( < ../wserverport)
+
+        DATAPORT=$( < ../dataport )
+        CTRLPORT=$( < ../ctrlport )
+        NODEPORT=$( < ../nodeport )
+        WSERVERIP=$HOME/wserverip
+
+        NUM_LAMBDAS=$( < ../numlambdasforward )
+
+        # Minor options.
+        UNDIRECTED=0           # Currently are all directed graphs.
+        COMP_THREADS=$(nproc)  # Default values.
+        COMM_THREADS=$[$(nproc) / 4]
+        if [ $COMM_THREADS -lt 2 ]; then
+            COMM_THREADS=2 # at least use two comm threads
+        fi
+        GNN_TYPE="GCN"
+
+        let MODE=0
+        let PIPELINE=0
+        let NUM_EPOCHS=10
+        let STALE_BOUND=4294967295
+        let PREPROCESS=0
+        let TO_RATIO=5
+        for var in "$@"
+        do
+            if [ $var = "GPU" ] || [ $var = "gpu" ]; then
+                let MODE=1;
+                NUM_LAMBDAS=1
+                COMP_THREADS=$(nproc)
+                COMM_THREADS=$(nproc)
+            elif [ $var = "CPU" ] || [ $var = "cpu" ]; then
+                let MODE=2;
+                NUM_LAMBDAS=1
+            fi
+
+            if [ $var = "--u" ] || [ $var = "--undirected" ]; then
+                UNDIRECTED=1
+            fi
+
+            if [ $var = "--p" ] || [ $var = "--pipeline" ]; then
+                PIPELINE=1
+            fi
+
+            if [[ $var = --l=* ]] || [[ $var = --lambdas=* ]]; then
+                NUM_LAMBDAS="${var#*=}"
+            fi
+
+            if [[ $var = --e=* ]] || [[ $var = --epochs=* ]]; then
+                NUM_EPOCHS="${var#*=}"
+            fi
+
+            if [[ $var = --s=* ]] || [[ $var = --staleness=* ]]; then
+                STALE_BOUND="${var#*=}"
+            fi
+
+            if [[ $var = --g=* ]] || [[ $var = --gnn=* ]]; then
+                GNN_TYPE="${var#*=}"
+            fi
+
+            if [[ $var = --preprocess ]]; then
+                PREPROCESS=1
+            fi
+
+            if [[ $var = --tr=* ]] || [[ $var = --timeout_ratio=* ]]; then
+                TO_RATIO="${var#*=}"
+            fi
+        done
+
+        # After processing args, check to see if GPU enables
+        # If so, disable pipelining
+        if [[ ($MODE -eq 1 || $MODE -eq 2) && $PIPELINE -eq 1 ]]; then
+            echo "GPU/CPU and pipeline cannot be used together. Disabling pipeline"
+            PIPELINE=0
+        fi
+
+        MYPRIPFILE=${HOME}/myprip
+        DSHMACHINESFILE=${HOME}/dshmachines
+
+        # Kill running graphservers.
+        echo -e "\e[33;1mKilling existing 'graphserver' processes...\e[0m"
+        dsh -f ${DSHMACHINESFILE} -c "killall -u $( whoami ) graphserver"
+
+        # Count the machines.
+        NDS=$( wc -l ${DSHMACHINESFILE} | cut -d" " -f1 )
+        for i in $( seq 1 ${NDS} ); do
+          DSHNODES[$i]=$( head -n $i ${DSHMACHINESFILE} | tail -n 1 )
+        done
+
+        # Choosing the dataset.
+        if [[ -z $2 ]] || [[ ! -d /filepool/$2 ]]; then
+            echo "Dataset '$2' is empty or not found under '/filepool' (at least on master node)."
+            echo "Please prepare the dataset correctly."
+            exit 1
+        fi
+
+        DATASET=/filepool/$2
+
+        LAYERFILE=${HOME}/$2.config
+
+        # Increment the running mark.
+        if [[ ! -f run/run-mark ]]; then
+            touch run/run-mark
+        fi
+        RUN_MARK=$(( $( cat run/run-mark ) + 1 ))
+        echo ${RUN_MARK} > run/run-mark
+        echo -e "\e[33;1mRunning GRAPH servers with: [ MARK # ${RUN_MARK} ]...\e[0m"
+
+        # Set logging file.
+        LOGFILEDIR=${HOME}/logfiles
+        mkdir -p ${LOGFILEDIR}
+        LOGFILE=${LOGFILEDIR}/${RUN_MARK}.$2.log
+
+        # Set temporary directory.
+        TMPFILEDIR=${HOME}/tmpfiles
+        dsh -f ${DSHMACHINESFILE} -c "rm -rf ${TMPFILEDIR} && mkdir -p ${TMPFILEDIR}"
+
+        # Gather the output files.
+        OUTFILEDIR=${HOME}/outfiles/${RUN_MARK}.weights
+        mkdir -p ${OUTFILEDIR}
+        for i in $( seq 1 ${NDS} ); do
+            scp -q ${DSHNODES[$i]}:${TMPFILEDIR}/output_* ${OUTFILEDIR}/
+        done
+
+        echo "Check the output results in \"~/outfiles/\" folder."
+        # Gather the output files.
+        OUTFILEDIR=${HOME}/outfiles/${RUN_MARK}.$2
+        mkdir -p ${OUTFILEDIR}
+        for i in $( seq 1 ${NDS} ); do
+            scp -q ${DSHNODES[$i]}:${TMPFILEDIR}/output_* ${OUTFILEDIR}/
+        done
+
+        echo "Check the output results in \"~/outfiles/\" folder."
+        echo "Check the running log under \"~/logfiles/\" folder."
+
+        if [ -e ${OUTFILEDIR}/output_0 ]; then
+          echo -e "\e[92;1mThis round of execution seems successful, congrats ;)\e[0m"
+        else
+          echo -e "\e[91;1mExecution fails (at least on this node), check the log file!\e[0m"
+          ~/kill-all
+        fi
+        ;;
+
+    #
+    # Run weightserver.
+    #
+    "weight")
+        if [[ $# -lt 2 ]]; then
+            echo "Usage: run-onnode weight [dataset]"
+            exit
+        fi
+
+        WPORT=$( < ../wserverport )
+        GPORT=$( < ../gserverport )
+        DATAPORT=$( < ../dataport )
+
+        MYPRIPFILE=${WORKING}/myprip_w
+        DSHMACHINESFILE=${WORKING}/dshmachines_w
+        GSERVERFILE=${WORKING}/gserverip
+        LAYERCONFIGFILE=${WORKING}/$2.config
+
+        # Minor options.
+        SYNC=1
+        TARGET_ACC="1"
+        SWITCH_THRESHOLD="0.02"
+        BLOCK=0
+        GNN_TYPE="GCN"
+        LEARNING_RATE="0.01"
+        for var in "$@"
+        do
+            if [ $var = "--p" ] || [ $var = "--pipeline" ]; then
+                # SYNC=0
+                SYNC=1
+            elif [[ $var = --t=* ]] || [[ $var = --targetacc=* ]]; then
+                TARGET_ACC="${var#*=}"
+            elif [[ $var = --g=* ]] || [[ $var == --gnn=* ]]; then
+                GNN_TYPE="${var#*=}"
+            fi
+
+            if [[ $var = --lr=* ]] || [[ $var = --learning_rate=* ]]; then
+                LEARNING_RATE="${var#*=}"
+            fi
+
+            if [[ $var = --st=* ]] || [[ $var = --switch_threshold=* ]]; then
+                # set to 0 to disable the async-sync switch
+                SWITCH_THRESHOLD="${var#*=}"
+            fi
+
+            # if [ $var = "GPU" ] || [ $var = "gpu" ] || [ $var = "CPU" ] || [ $var = "cpu" ]; then
+            #     BLOCK=1
+            # fi
+        done
+
+        # Kill running weightservers.
+        echo -e "\e[33;1mKilling existing 'weightserver' processes...\e[0m"
+        killall -u $( whoami ) weightserver
+
+        # Count the machines.
+        NDS=$( wc -l ${DSHMACHINESFILE} | cut -d" " -f1 )
+        for i in $( seq 1 ${NDS} ); do
+          DSHNODES[$i]=$( head -n $i ${DSHMACHINESFILE} | tail -n 1 )
+        done
+
+        # Increment the running mark.
+        if [[ ! -f run/run-mark ]]; then
+            touch run/run-mark
+        fi
+        RUN_MARK=$(( $( cat run/run-mark ) + 1 ))
+        echo ${RUN_MARK} > run/run-mark
+        echo -e "\e[33;1mRunning WEIGHT servers with: [ MARK # ${RUN_MARK} ]...\e[0m"
+
+        # Set temporary directory.
+        TMPFILEDIR=${HOME}/tmpfiles
+        rm -rf ${TMPFILEDIR} && mkdir -p ${TMPFILEDIR}
+
+        # Run weightserver on all dsh machines.
+        DSH_COMMAND="./build_weight/weightserver \
+            ${DSHMACHINESFILE} \
+            ${MYPRIPFILE} \
+            ${GSERVERFILE} \
+            ${DATAPORT} \
+            ${WPORT} \
+            ${GPORT} \
+            ${LAYERCONFIGFILE} \
+            ${TMPFILEDIR} \
+            ${SYNC} \
+            ${TARGET_ACC} \
+            ${BLOCK} \
+            ${GNN_TYPE} \
+            ${LEARNING_RATE} \
+            ${SWITCH_THRESHOLD}"
+
+        echo ${DSH_COMMAND}
+        cd ${WORKING}/dorylus && ${DSH_COMMAND}
+
+        ;;
+
+    *)
+        echo "Must specify a valid context 'graph' / 'weight'"
+        echo "Usage: ./run/run-onnode <Context>"
+        exit 1
+        ;;
+esac
+

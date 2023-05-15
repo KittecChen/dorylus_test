@@ -1,0 +1,16 @@
+#!/bin/bash
+
+##
+## Runs a command for both contexts
+##
+
+cd $( dirname $0 )/..
+
+contexts='weight graph'
+EC2MAN_CMD="python3 -m ec2man"
+
+for ctx in ${contexts[@]}; do
+    echo ${ctx}
+    ${EC2MAN_CMD} $ctx "${@}"
+    echo
+done

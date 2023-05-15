@@ -1,0 +1,2 @@
+/usr/bin/ar qc libengine.a CMakeFiles/engine.dir/engine.cpp.o CMakeFiles/engine.dir/utils.cpp.o CMakeFiles/engine.dir/ops/gat_ops.cpp.o CMakeFiles/engine.dir/ops/gcn_ops.cpp.o CMakeFiles/engine.dir/ops/pipeline.cpp.o CMakeFiles/engine.dir/ops/tensors.cpp.o
+/usr/bin/ranlib libengine.a

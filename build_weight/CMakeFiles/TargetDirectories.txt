@@ -1,0 +1,8 @@
+/home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/rebuild_cache.dir
+/home/x-lchen3/kittec_project/dorylus/build/CMakeFiles/edit_cache.dir
+/home/x-lchen3/kittec_project/dorylus/build/src/common/CMakeFiles/rebuild_cache.dir
+/home/x-lchen3/kittec_project/dorylus/build/src/common/CMakeFiles/edit_cache.dir
+/home/x-lchen3/kittec_project/dorylus/build/src/common/CMakeFiles/common.dir
+/home/x-lchen3/kittec_project/dorylus/build/weight-server/CMakeFiles/rebuild_cache.dir
+/home/x-lchen3/kittec_project/dorylus/build/weight-server/CMakeFiles/edit_cache.dir
+/home/x-lchen3/kittec_project/dorylus/build/weight-server/CMakeFiles/weightserver.dir
